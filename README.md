@@ -1,41 +1,47 @@
-# Edacpfbr
+# EdaCPFbr
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/edacpfbr`. To experiment with that code, run `bin/console` for an interactive prompt.
+Esta gema valida CPFs, verificando se os dígitos verificadores estão corretos.
 
-TODO: Delete this and the text above, and describe your gem
+## Instalação
 
-## Installation
-
-Add this line to your application's Gemfile:
+Adicione a seguinte linha ao seu Gemfile:
 
 ```ruby
 gem 'edacpfbr'
 ```
 
-And then execute:
+E execute:
 
     $ bundle
 
-Or install it yourself as:
+Ou instale você, digitando:
 
     $ gem install edacpfbr
 
-## Usage
+## Uso
 
-TODO: Write usage instructions here
+Você pode invocar 
 
-## Development
+    EdaCPFbr.validar(cpf)
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/edacpfbr.
+onde `cpf` é uma string contendo um CPF completo. O resultado será `true` se o CPF estiver correto, ou seja, se os dois dígitos verificadores estiverem corretos, ou `false` caso contrário.
 
 
-## License
+É possível também validar uma lista de CPFs, passada como uma array, com
 
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+    EdaCPFbr.validar_lote(lista)
+
+Nesse caso a saía será um Hash, com as chaves sendo os CPFs passados e os valores sendo `true` ou `false`, conforme cada CPF seja correto ou não.
+
+## Desenvolvimento
+
+Depois de fazer o checkout do repositório, execure `bin/setup` para instalar as dependências. Então execure `rake spec` para rodar todos os testes. Você pode também executar `bin/console` para obter um console iterativo que permitirá fazer experiências com a gema.
+
+Para instalar esta gema em sua máquina local, execute `bundle exec rake install`.
+
+Para submeter sua contribuição, faça o push do seu branch com `git pull origin <branch>` e gere o pull request, que será avaliado, sendo o merge resultado da avaliação positiva do código submetido.
+
+Bugs e pull requests são bemvindos no GitHub em https://github.com/EdDeAlmeidaJr/edacpfbr.
+
+Esta gema está disponível nos termos da [MIT License](http://opensource.org/licenses/MIT). Isto significa, em resumo, que você pode copiar, modificar e distribuir livremente o código, desde que informe quem é o autor.
 

@@ -1,3 +1,3 @@
-module Edacpfbr
+module EdaCPFbr
   VERSION = "0.1.0"
 end
