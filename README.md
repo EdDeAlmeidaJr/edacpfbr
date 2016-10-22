@@ -2,6 +2,10 @@
 
 Esta gema valida CPFs, verificando se os dígitos verificadores estão corretos.
 
+# Badges
+
+[![Build Status](https://travis-ci.org/EdDeAlmeidaJr/edacpfbr.svg?branch=master)](https://travis-ci.org/EdDeAlmeidaJr/edacpfbr)
+
 ## Instalação
 
 Adicione a seguinte linha ao seu Gemfile:
