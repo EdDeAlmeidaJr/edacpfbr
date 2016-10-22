@@ -31,6 +31,8 @@ onde `cpf` é uma string contendo um CPF completo. O resultado será `true` se o
 
     EdaCPFbr.validar_lote(lista)
 
+Nesse caso a saía será um Hash, com as chaves sendo os CPFs passados e os valores sendo `true` ou `false`, conforme cada CPF seja correto ou não.
+
 Finalmente, é possível requisitar uma lista de `n` CPFs válidos com
 
 	EdaCPFbr.gerar_lote_valido(n)
@@ -38,8 +40,6 @@ Finalmente, é possível requisitar uma lista de `n` CPFs válidos com
 ou inválidos com
 
 	EdaCPFbr.gerar_lote_invalido(n)
-
-Nesse caso a saía será um Hash, com as chaves sendo os CPFs passados e os valores sendo `true` ou `false`, conforme cada CPF seja correto ou não.
 
 ## Desenvolvimento
 
