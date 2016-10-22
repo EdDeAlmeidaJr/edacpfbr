@@ -24,12 +24,20 @@ Você pode invocar
 
     EdaCPFbr.validar(cpf)
 
-onde `cpf` é uma string contendo um CPF completo. O resultado será `true` se o CPF estiver correto, ou seja, se os dois dígitos verificadores estiverem corretos, ou `false` caso contrário.
+onde `cpf` é uma string contendo um CPF completo. O resultado será `true` se o CPF estiver correto, ou seja, se os dois dígitos verificadores estiverem simultaneamente corretos, ou `false` caso contrário.
 
 
 É possível também validar uma lista de CPFs, passada como uma array, com
 
     EdaCPFbr.validar_lote(lista)
+
+Finalmente, é possível requisitar uma lista de `n` CPFs válidos com
+
+	EdaCPFbr.gerar_lote_valido(n)
+
+ou inválidos com
+
+	EdaCPFbr.gerar_lote_invalido(n)
 
 Nesse caso a saía será um Hash, com as chaves sendo os CPFs passados e os valores sendo `true` ou `false`, conforme cada CPF seja correto ou não.
 
