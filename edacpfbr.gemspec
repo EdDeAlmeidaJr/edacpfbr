@@ -9,6 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Ed de Almeida"]
   spec.email         = ["edvaldoajunior@gmail.com"]
 
+  spec.required_ruby_version = '>= 1.9.2'
+
   spec.summary       = "Valida CPFs e gera lotes de CPFs aleatórios para teste."
   spec.description   = "Valida CPFs e gera lotes de CPFs aleatórios para teste. Fornece listas de CPFs válidos aleatórios."
   spec.homepage      = "https://github.com/EdDeAlmeidaJr/edacpfbr"
