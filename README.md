@@ -6,6 +6,8 @@ Esta gema valida CPFs, verificando se os dígitos verificadores estão corretos.
 
 [![Build Status](https://travis-ci.org/EdDeAlmeidaJr/edacpfbr.svg?branch=master)](https://travis-ci.org/EdDeAlmeidaJr/edacpfbr)
 
+[![Code Climate](https://codeclimate.com/github/EdDeAlmeidaJr/edacpfbr/badges/gpa.svg)](https://codeclimate.com/github/EdDeAlmeidaJr/edacpfbr)
+
 ## Instalação
 
 Adicione a seguinte linha ao seu Gemfile:
